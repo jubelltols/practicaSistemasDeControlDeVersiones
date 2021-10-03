@@ -1,0 +1,80 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta name="theme-color" content="#fafafa">
+    </head>
+
+    <body>
+    <header>
+        <h1 class="header">Fundamentos de JavaScript</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a class="active" href="modificar_contenido_html.html">Modificar contenido HTML</a></li>
+            <li><a class="active" href="modificar_atributos_html.html">Modificar atributos HTML</a></li>
+            <li><a class="active" href="modificar_estilos_css.html">Modificar estilos CSS</a></li>
+        </ul>
+    </nav>
+
+    <div class="description">
+        <h2>Definition and Usage</h2>
+        <p>The getElementById() method returns the element that has the ID attribute with the specified value.</p>
+        <p> This method is one of the most common methods in the HTML DOM, and is used almost every time you want to manipulate, or get info from, an element on your document.</p>
+        <p>Returns null if no elements with the specified ID exists.</p>
+        <p>An ID should be unique within a page. However, if more than one element with the specified ID exists, the getElementById() method returns the first element in the source code.</p>
+
+        <h2>Syntax</h2>
+        <p>document.getElementById(elementID)</p>
+
+        <h2>Example</h2>
+        <div class="code">
+            <p id="demo">Click the button to change the text in this paragraph.</p>
+    
+            <button onclick="myFunction()">Try it</button>
+
+            <script>
+                function myFunction() {
+                    document.getElementById("demo").innerHTML = "Hello World";
+                }
+            </script>
+        </div>
+    </div>
+
+    <footer>
+        <p>Author: jubelltols<br>
+        <a href=""></a>jubelltols@gmail.com</p>
+    </footer>
+
+    <!-- Add your site or application content here -->
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
